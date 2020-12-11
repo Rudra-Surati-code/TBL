@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.menu {
+    top: 10px;
+    right: 30px;
+    position: absolute;
+    z-index: 60;
+    list-style: none;
+    position: fixed;
+    cursor: pointer;
+}
+
+.link {
+    float: left;
+    padding: 5px 9px;
+    font-family: cursive;
+    transition: 1s ease;
+    border-left: 3px solid #000;
+}
+
+.link:hover {
+    background: #000;
+    color: white;
+}
+
+a:hover {
+    background: #000;
+    color: white;
+}
+
+.link, a {
+    color: black;
+    text-decoration: none;
+    transition: 1s ease;
+}
+
+.profile {
+    border-radius: 50%;
+    margin-bottom: 50px;
+    width: 175px;
+}
+
+.article {
+    font-size: 20px;
+}
+
+h1 { 
+    font-size: 40px; 
+    line-height: 1.2; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 300; 
+}
+
+h2 { 
+    font-size: 30px; 
+    font-weight: 300; 
+    line-height: 1.2; 
+    font-family: monospace;
+}
+
+#welcome {
+    z-index: 10;
+    display: table;
+    width: 100%;
+    height: 100vh;
+/*    position: absolute;*/
+    background: linear-gradient(#60ebeb 0%, #27ae60 100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.parallax-inner {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#bio {
+    padding: 15px;
+    text-align: center;
+    font-size: 32px;
+    height: 100vh;
+    z-index: 40;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.line {
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 60px;
+    margin-left: 47%;
+}
+
+footer, p {
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 100px;
+    height: 10%;
+    background: linear-gradient(#2193b0, #6dd5ed);
+    color: aliceblue;
+    padding: 20px 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+
+@media (750px) screen {
+    .profile {
+        widows: 50px;
+        height: 1px;
+    }
+}
